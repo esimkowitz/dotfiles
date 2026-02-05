@@ -8,7 +8,7 @@ Personal configuration for devcontainers.
 
    ```json
    {
-     "dotfiles.repository": "YOURUSERNAME/dotfiles",
+     "dotfiles.repository": "esimkowitz/dotfiles",
      "dotfiles.installCommand": "install.sh",
      "dev.containers.defaultMounts": [
        "source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind"
