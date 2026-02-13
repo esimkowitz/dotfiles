@@ -31,8 +31,8 @@ Add features to your `devcontainer.json`:
 ```json
 {
     "features": {
-        "ghcr.io/esimkowitz/dotfiles/fish-starship:1": {},
-        "ghcr.io/esimkowitz/dotfiles/ssh-signing:1": {}
+        "ghcr.io/esimkowitz/devcontainer-features/fish-starship:1": {},
+        "ghcr.io/esimkowitz/devcontainer-features/ssh-signing:1": {}
     }
 }
 ```
