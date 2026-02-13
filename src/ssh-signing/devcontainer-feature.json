@@ -1,6 +1,6 @@
 {
     "id": "ssh-signing",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "SSH Commit Signing",
     "description": "Configures git to use SSH commit signing when an agent is available. Detects keys at container start.",
     "options": {

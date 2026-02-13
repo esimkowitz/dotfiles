@@ -1,6 +1,6 @@
 {
     "id": "fish-starship",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "Fish Shell with Starship Prompt",
     "description": "Installs Fish shell and Starship prompt with a clean devcontainer configuration. Persists shell history across container rebuilds.",
     "options": {
