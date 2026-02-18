@@ -24,6 +24,16 @@ Configures git to use SSH commit signing when an agent is available. Detects key
 
 Includes git aliases (`st`, `co`, `br`), `pull.rebase=true`, `autocrlf=input`, and `init.defaultBranch=main`.
 
+### direnv
+
+Installs [direnv](https://direnv.net/) and configures shell hooks for bash, zsh, and fish. Enables `load_dotenv` by default so `.env` files are automatically loaded.
+
+| Option | Type | Default |
+|--------|------|---------|
+| `version` | string | `"latest"` |
+
+The `version` option accepts `"latest"`, `"system"`, or a specific version like `"2.34.0"`.
+
 ## Usage
 
 Add features to your `devcontainer.json`:
@@ -32,7 +42,8 @@ Add features to your `devcontainer.json`:
 {
     "features": {
         "ghcr.io/esimkowitz/devcontainer-features/fish-starship:1": {},
-        "ghcr.io/esimkowitz/devcontainer-features/ssh-signing:1": {}
+        "ghcr.io/esimkowitz/devcontainer-features/ssh-signing:1": {},
+        "ghcr.io/esimkowitz/devcontainer-features/direnv:1": {}
     }
 }
 ```
