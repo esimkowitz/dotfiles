@@ -1,0 +1,4 @@
+# Enable direnv's built-in dotenv loader so a bare .env file is picked up
+# (after `direnv allow`). See: https://direnv.net/man/direnv.toml.1.html
+[global]
+load_dotenv = true

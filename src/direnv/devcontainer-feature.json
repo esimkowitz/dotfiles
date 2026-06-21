@@ -1,6 +1,6 @@
 {
     "id": "direnv",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "direnv with dotenv support",
     "description": "Installs direnv and configures shell hooks for bash, zsh, and fish. Enables load_dotenv by default so .env files are automatically loaded.",
     "options": {
