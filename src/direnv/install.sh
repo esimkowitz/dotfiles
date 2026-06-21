@@ -80,10 +80,14 @@ if [ -f "$FISH_CONFIG" ]; then
   fi
 fi
 
-# Deploy direnvrc for the remote user
+# Deploy direnv.toml for the remote user.
+# `load_dotenv` is a direnv.toml config KEY, not a shell command — putting it in
+# direnvrc (which is sourced as a shell script) only yields
+# "load_dotenv: command not found" and never loads .env files. The correct
+# mechanism is `load_dotenv = true` under [global] in direnv.toml.
 DIRENV_CONFIG_DIR="${_REMOTE_USER_HOME}/.config/direnv"
 mkdir -p "$DIRENV_CONFIG_DIR"
-cp "$(dirname "$0")/direnvrc" "$DIRENV_CONFIG_DIR/direnvrc"
+cp "$(dirname "$0")/direnv.toml" "$DIRENV_CONFIG_DIR/direnv.toml"
 chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "$DIRENV_CONFIG_DIR"
 
 echo "direnv installed and configured successfully!"
